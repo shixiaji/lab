@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+   <meta charset="utf-8">
+   <title>Lab 04</title>
+   <link rel="stylesheet" href="./css/reset.css" />
+   <link rel="stylesheet" href="./css/Lab04.css" />
+</head>
+<body>
+<header>
+     <h1>Share Your Travels</h1>
+     <p>let us know where you've been</p>
+</header>
+<main>
+   <section>
+       <fieldset>
+
+               <legend>PHOTO DETAILS</legend>
+               <table>
+                   <tr>
+                       <td colspan="2">Title
+                           <input type="text" name="title" placeholder="Give your photo a descriptive name">
+                       </td>
+                   </tr>
+                   <tr>
+                       <td colspan="2">Description
+                           <textarea name="Description" placeholder="Adding a rich descripton will help with search results" rows="4"></textarea>
+                       </td>
+                   </tr>
+                   <tr>
+                        <td >Continent
+                            <br>
+                            <select style="width:250px">
+                                <option value="Choose Continent">Choose continent</option>
+                            </select>
+                        </td>
+                       <td rowspan="3">
+                       <fieldset class="box">
+                           Copyright?
+                           <br>
+                           <form>
+                               <input type="radio" name="Copyright" value="All rights reserved" >All rights reserved
+                               <br>
+                               <input type="radio" name="Copyright" value="Creative Commons" checked>Creative Commons
+                           </form>
+                       </fieldset>
+                       <fieldset class="box">
+                           Creative Commons Types
+                           <br>
+                           <form>
+                               <input type="checkbox" name="Copyright" value="Attribution">Attribution
+                               <br>
+                               <input type="checkbox" name="Copyright" value="Noncommercial">Noncommercial
+                               <br>
+                               <input type="checkbox" name="Copyright" value="No Derivative Works">No Derivative Works
+                           </form>
+                       </fieldset>
+
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                            Country
+                            <br>
+                            <select style="width:250px">
+                                <option value="Choose Country">Choose country</option>
+                            </select>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                            City
+                            <br>
+                            <input type="text" name="City" style="width:250px">
+                       </td>
+                   </tr>
+                   <tr class="rectangle">
+                       <td colspan="2" >
+                           I accept the software license<input type="checkbox" name="n" value="n">
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                           Rate this photo:
+                           <br>
+                           <input type="text" name="Rate">
+                       </td>
+                       <td rowspan="2">
+                           <div>
+
+
+                           <fieldset class="box">
+                                Date taken
+                                <br>
+                                <input type="date" name="date">
+                                <br>
+                                Time taken
+                                <br>
+                                <input type="time" name="time">
+                                </fieldset>
+                           </div>
+                       </td>
+
+                   </tr>
+                   <tr>
+                       <td>
+                           Color Collection
+                           <br>
+                           <input type="color" name="color">
+                       </td>
+                   </tr>
+                   <tr class="rectangle">
+                       <td colspan="2">
+                           <button type="button" class="rounded">提交</button>
+                           <button type="button" class="rounded">Clear form</button>
+                       </td>
+                   </tr>
+               </table>
+
+       </fieldset>
+   </section>
+</main>  
+
+
+</body>
+</html>
