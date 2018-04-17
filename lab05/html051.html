@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+
+    <title>lab5</title>
+</head>
+<body>
+
+<form role="form">
+    <div class="form-group">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1>Share Your Travels</h1>
+                    <p class="text-center"><em>Let us know where you have been</em></p>
+                </div>
+                <div class="col-md-8 ">
+                    <br>
+                    <ul class="nav navbar-dark justify-content-center">
+                        <li class="nav-item">
+                            <a href="lab05.html" class="nav-link">Gallary</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Feeling lucky</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">User</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container border">
+            <br>
+            <h3>Photo details</h3>
+            <div class="row">
+                <div class="col-md-12">
+                    <h5>Title</h5>
+                    <input name="Title" type="text" class="form-control" placeholder="Give your photo a descriptive name">
+                    <br>
+                    <h5>Description</h5>
+                    <textarea name="Description" class="form-control" placeholder="Adding a rich descripton will help with search results" rows="4"></textarea>
+                    <br>
+                    <h5>Continent</h5>
+                    <select class="form-control">
+                        <option value="Choose Continent">Choose continent</option>
+                    </select>
+                    <br>
+                    <h5>Country</h5>
+                    <select class="form-control">
+                        <option value="Choose Country">Choose country</option>
+                    </select>
+                    <br>
+                    <h5>City</h5>
+                    <input type="text" name="City" class="form-control">
+                    <br>
+                    <h5>Copyright?</h5>
+                    <form class="form-control">
+                        <input type="radio" name="Copyright" value="All rights reserved" >All rights reserved
+                        <br>
+                        <input type="radio" name="Copyright" value="Creative Commons" checked>Creative Commons
+                    </form>
+                    <br>
+                    <h5>Creative Commons Types</h5>
+                    <form class="form-control">
+                        <input type="checkbox" name="Copyright" value="Attribution">Attribution
+                        <br>
+                        <input type="checkbox" name="Copyright" value="Noncommercial">Noncommercial
+                        <br>
+                        <input type="checkbox" name="Copyright" value="No Derivative Works">No Derivative Works
+                    </form>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Rate this photo:</h5>
+                    <input type="text" name="Rate" class="form-control">
+                </div>
+                <div class="col-md-8">
+                    <h5>Color Collection</h5>
+                    <input type="color" name="color" >
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Date taken</h5>
+                    <input type="date" name="date">
+                </div>
+                <div class="col-md-6">
+                    <h5>Time taken</h5>
+                    <input type="time" name="time">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default">Submit</button>
+                        <button type="reset" class="btn btn-default">Clear</button>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+</form>
+<br>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>
