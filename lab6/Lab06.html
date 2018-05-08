@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width">
+	<title>Lab06</title>
+	<link href="css/Lab06.css" rel="stylesheet" />
+    <script src="js/data.js" type="text/JavaScript"></script>
+</head>
+
+<body>
+<header>
+    <h2>Share Your Travels</h2>
+</header>
+<div class="flex-container justify">
+
+</div>
+
+</body>
+<script>
+    function cities(i) {
+        let s = "";
+        for (var p=1;p<=countries[i-1].cities.length;p++) {
+            s = s + "<p>" + countries[i - 1].cities[p - 1] + "</p>"
+        }
+        return s;
+    }
+
+    function photo(i) {
+        let s = "";
+        for (var p=1;p<=countries[i-1].photos.length;p++) {
+            s = s + '<img src="images/' +
+				countries[i-1].photos[p-1] +
+				'">'
+        }
+        return s;
+    }
+
+    function creatE(i){
+        var s = "<div class='item'>"+
+            "<h2>" +countries[i-1].name+"</h2>" +
+            "<h3>" + countries[i-1].continent+"</h3>" +
+            "<div class='inner-box'>"+
+            "<h2>Cities</h2>" + cities(i)+
+            "</div>" +
+            "<div class='inner-box'>"
+            +"<h2>Popular Photos</h2>" + photo(i)+
+            "</div>"
+            +"<button> Visit </button>"+"</div>"
+            ;
+        return s;
+    }
+
+    document.getElementsByTagName("div")[0].innerHTML =
+        creatE(1) + creatE(2) +creatE(3)+creatE(4);
+
+</script>
+</html>
