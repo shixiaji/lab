@@ -1,0 +1,34 @@
+body{
+    text-align: center;
+}
+
+select,button{
+    width: 300px;
+}
+
+#commit{
+    display: none;
+    margin: 0 auto;
+}
+
+table{
+    border: 0;
+    margin: 0 auto;
+}
+
+th{
+    background: grey;
+    color: white;
+}
+
+td{
+    padding: 0 0.5em;
+}
+
+td,th{
+    width: 40px;
+}
+
+.odd_tr{
+    background-color:lightgrey;
+}
